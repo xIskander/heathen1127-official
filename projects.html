@@ -1,34 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Heathen#1127 Official - My Projects</title>
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-body {
-    font-family: 'Ruslan Display', Arial, sans-serif;
-  background-color: #111;
-  color: #fff;
-  font-family: Arial, sans-serif;
-}
+		body {
+			font-family: 'Neuropol X', sans-serif;
+			color: #fff;
+			background-color: black;
+        	background-size: cover;
+			background-size: cover;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+		}
 header {
   padding: 20px;
   text-align: center;
   color: #fff;
 }
-
+.button2 {
+            font-size: 30px;
+            color: white;
+            text-decoration: underline;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
 nav ul {
     list-style-type: none;
   margin: 0 auto; /* Center the navigation */
   padding: 0;
   overflow: hidden;
-  background-color: #222;
   text-align: center;
 }
-
+.p {
+        text-align: center;
+        font-size: 24px;
+      }
 nav li {
   display: inline-block; /* Display the list items horizontally */
 }
 
+.title {
+			font-size: 2em;
+			margin-top: 2em;
+            font-size: 24px;
+            text-align: center;
+
+		}
+        .title2 {
+			font-size: 2em;
+			margin-top: 2em;
+            font-size: 24px;
+            text-align: center;
+
+		}
+        .fontsize {
+            font-size: 12px;
+		}
 nav li a {
   display: block;
   color: #fff;
@@ -53,44 +80,89 @@ img {
   height: auto;
   margin-top: 10px;
 }
-
 footer {
-  background-color: #222;
   padding: 20px;
   text-align: center;
   color: #fff;
 }
-
+		.background {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; 
+}
+.home-button {
+	background-color: #000000;
+			border: 4px solid #ffffff;
+       padding: 12px 24px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       margin: 4px 2px;
+       cursor: pointer;
+       border-radius: 8px;
+       transition: all 0.2s ease-in-out; 
+      }
+	  .home-button:hover {
+		background-color: #000000;
+       border: 4px solid #ffffff;
+       color: #ffffff;
+  	   transform: scale(1.1); 
+	  }
   </style>
 </head>
-<body>
-  <header>
-    <h1>My Portfolio</h1>
-  </header>
+<body background="black"> 
+	<div class="background">
+		<div class="content">
+		</div>
+  </div>
+	<div class="title">
+        <p>&nbsp;</p>
+		<h1>My Projects</h1>
+	</div>
+  <div class="taskbar">
+	</div>
+    <nav>
+        <ul>
+          <li><a href="index.html" class="home-button">Home</a></li>
+        </ul>
+      </nav>
+      <p>&nbsp;</p>
+<main>
+  <section id="albatross">
+      <a href="https://albatrossanimationstudios.github.io/albatross-official/" target="_blank" class="button2">Albatross Animation Studios</a>
+    <p>Here at Albatross Animation Studios, we make awesome stop motion brickfilms and claymation. From a stop motion made on the highest mountain in Africa, to an entertaining series of teddy bear fight scenes. Albatross Animation Studios is cool. If you want to see great stop motion animtions, this is your place. So Subscribe!</p>
+    <img src="albatross pic.jpg" alt="albatross pic">
+  </section>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section id="albatross">
-      <h2>Albatross Animation Studios</h2>
-      <p>Here at Albatross Animation Studios, we make awesome stop motion brickfilms and claymation. From a stop motion made on the highest mountain in Africa, to an entertaining series of teddy bear fight scenes. Albatross Animation Studios is cool. If you want to see great stop motion animtions, this is your place. So Subscribe!</p>
-      <img src="albatross pic.jpg" alt="Project 1 Screenshot">
-    </section>
-
-    <section id="lunar">
-      <h2>Lunar Utilities</h2>
-      <p>Hello, This is Lunar Bot Created by a Fellow Bot Developer in the Discord Community. this bot was Created to help Better Moderate Servers and Help Make your Server a bit better. Here at the Lunar Bot Development Team we Put a lot of Time and Effort into this bot and we work on it frequently and make several weekly updates. We hope you like our bot.</p>
-      <img src="lunar pic.jpg" alt="Project 2 Screenshot">
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
-  </footer>
+  <section id="lunar">
+      <a href="https://xiskander.github.io/lunar-utilities/" target="_blank" class="button2">Lunar Utilities</a>
+    <p>Hello, This is Lunar Bot Created by a Fellow Bot Developer in the Discord Community. this bot was Created to help Better Moderate Servers and Help Make your Server a bit better. Here at the Lunar Bot Development Team we Put a lot of Time and Effort into this bot and we work on it frequently and make several weekly updates. We hope you like our bot.</p>
+    <img src="lunar pic.jpg" alt="lunar pic">
+  </section>
+</main>
+</section>
+<script>
+  function smoothScroll(target) {
+    var element = document.querySelector(target);
+    var position = element.offsetTop;
+    window.scrollTo({
+      top: position,
+      behavior: 'smooth'
+    });
+  }
+</script>
+<hr>
+<footer>
+  <p>&copy; 2023 Heathen#1127 Official | Website designed and developed by Heathen#1127.</p>
+</footer>
+<hr>
+  <!-- Website by Tsirkon the Great! Discord: Heathen#1127 -->
 </body>
 </html>  
